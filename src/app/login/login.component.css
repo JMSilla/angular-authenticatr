@@ -1,0 +1,15 @@
+.input-margin {
+    margin-top: 5px;
+}
+
+.button-margin {
+    margin-top: 10px;
+}
+
+.error-message {
+    background-color: indianred;
+    border-radius: 8px;
+    color: white;
+    margin-top: 15px;
+    padding: 10px;
+}

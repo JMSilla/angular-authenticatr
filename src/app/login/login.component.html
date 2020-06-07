@@ -1,0 +1,20 @@
+<form class="form-group" [formGroup]="loginForm" (ngSubmit)="login()">
+    <div>
+        <h1>Login form</h1>
+
+        <div>
+            <input type="text" placeholder="Username" formControlName="username" 
+                class="form-control input-margin" />
+            <input type="password" placeholder="Password" formControlName="password"
+                class="form-control input-margin" />
+        </div>
+
+        <div>
+            <button type="submit" [disabled]="loginForm.status === 'INVALID'" class="btn btn-primary button-margin">
+                Login
+            </button>
+        </div>
+
+        <div [hidden]="!showLogError" class="error-message">Login incorrect</div>
+    </div>
+</form>
